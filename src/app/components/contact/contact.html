@@ -1,0 +1,77 @@
+
+<section class="contact-mission">
+  <div class="terminal">
+    <header class="terminal__header">
+      <span class="terminal__status">
+        {{ 'CONTACT.STATUS' | translate }}
+      </span>
+      <div class="terminal__dots" aria-hidden="true">
+        <span class="terminal__dot"></span>
+        <span class="terminal__dot"></span>
+        <span class="terminal__dot"></span>
+      </div>
+    </header>
+
+    <form
+      class="contact-form"
+      #contactForm="ngForm"
+      (ngSubmit)="sendEmailJS(contactForm)"
+      novalidate>
+
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="subject">
+          {{ 'CONTACT.SUBJECT' | translate }}
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          class="contact-form__input"
+          [placeholder]="'CONTACT.SUBJECT_PH' | translate"
+          required
+          ngModel>
+      </div>
+
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="user_email">
+          {{ 'CONTACT.EMAIL' | translate }}
+        </label>
+        <input
+          type="email"
+          id="user_email"
+          name="user_email"
+          class="contact-form__input"
+          [placeholder]="'CONTACT.EMAIL_PH' | translate"
+          required
+          email
+          ngModel>
+      </div>
+
+      <div class="contact-form__group">
+        <label class="contact-form__label" for="message">
+          {{ 'CONTACT.MESSAGE' | translate }}
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          class="contact-form__textarea"
+          [placeholder]="'CONTACT.MESSAGE_PH' | translate"
+          required
+          ngModel
+          rows="5"></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="contact-form__submit-btn"
+        [class.contact-form__submit-btn--success]="isSent"
+        [disabled]="contactForm.invalid || isSent">
+        <em class="fas" [ngClass]="isSent ? 'fa-check-circle' : 'fa-satellite-dish'" aria-hidden="true"></em>
+        <span class="contact-form__submit-text">
+          {{ isSent ? ('CONTACT.SUCCESS' | translate) : ('CONTACT.SEND' | translate) }}
+        </span>
+      </button>
+
+    </form>
+  </div>
+</section>

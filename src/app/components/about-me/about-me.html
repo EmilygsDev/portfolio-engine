@@ -1,0 +1,50 @@
+
+<section class="bio-card" aria-labelledby="bio-title">
+  <div
+    class="bio-card__visual" role="img"
+    aria-label="Mapa estelar interactivo de hitos profesionales">
+    <button *ngFor="let star of stars; trackBy: trackById"
+            type="button"
+            class="bio-card__star"
+            [ngClass]="'bio-card__star--' + star.size"
+            [style.top]="star.y"
+            [style.left]="star.x"
+            (click)="selectMilestone(star)"
+            [attr.aria-label]="'Ver detalles de: ' + star.id">
+    </button>
+  </div>
+
+  <div class="bio-card__data">
+    <header class="bio-card__header">
+      <h1 id="bio-title" class="bio-card__title">{{ activeInfo().title }}</h1>
+      <p class="bio-card__subtitle">{{ activeInfo().subtitle }}</p>
+    </header>
+
+    <div class="bio-card__records">
+      <p class="bio-card__text"><strong>   ORIGIN:</strong> GRAD 2024</p>
+      <p class="bio-card__text"><strong>   DISCIPLINE:</strong> ELECTRONIC ENGINEERING</p>
+      <p class="bio-card__text"><strong>   CLEARANCE:</strong> COMPLETED IN COLOMBIA</p>
+    </div>
+
+    <div class="bio-card__skills">
+      <p class="bio-card__analysis" aria-live="polite">
+        {{ activeInfo().description }}
+      </p>
+
+      <div class="bio-card__skill-list">
+        <div *ngFor="let skill of skills" class="bio-card__skill-item">
+          <div class="bio-card__skill-info">
+            <span class="bio-card__skill-label">{{ skill.name }}</span>
+            <span class="bio-card__skill-value">{{ skill.level }}</span>
+          </div>
+          <div class="bio-card__bar-track" role="progressbar"
+               [attr.aria-valuenow]="skill.level.replace('%', '')"
+               aria-valuemin="0"
+               aria-valuemax="100">
+            <div class="bio-card__bar-fill" [style.width]="skill.level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

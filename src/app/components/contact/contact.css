@@ -1,0 +1,197 @@
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-section {
+  padding: 800px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__title {
+  font-family: var(--font-code);
+  color: var(--nasa-blue-dark);
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background: var(--nasa-red-alert);
+  box-shadow: 0 0 10px rgba(var(--nasa-red-alert-rbg), 0.5);
+}
+
+.input-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--nasa-blue-light);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* --- BOTÓN DE TRANSMISIÓN --- */
+.terminal__btn {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid var(--nasa-red-alert);
+  color: var(--nasa-red-alert);
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: var(--tr-bounce);
+}
+
+.terminal__btn:hover:not(:disabled) {
+  background: var(--nasa-red-alert);
+  color: var(--tech-white);
+  box-shadow: 0 0 15px rgba(var(--nasa-red-alert-rbg), 0.5);
+}
+
+.terminal__btn.is-success {
+  border-color: var(--nasa-blue-light);
+  color: var(--nasa-blue-light);
+}
+
+/* Control total del autocompletado */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+
+  -webkit-box-shadow: 0 0 0px 1000px rgba(var(--tech-grey-light-rbg), 1) inset !important;
+  -webkit-text-fill-color: var(--nasa-blue-dark) !important;
+
+  font-family: var(--font-code) !important;
+
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --- SECCIÓN DE CONTACTO --- */
+.contact-mission {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--font-code);
+}
+
+/* --- BLOQUE TERMINAL --- */
+.terminal {
+  background: rgba(var(--tech-grey-light-rbg), 0.95);
+  border: 1px solid var(--tech-grey-light);
+  border-radius: 0 0 10px 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(var(--nasa-blue-dark-rbg), 0.2);
+}
+
+.terminal__header {
+  background: var(--nasa-blue-dark);
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terminal__status {
+  font-size: 0.7rem;
+  color: var(--tech-white);
+  letter-spacing: 1px;
+}
+
+.terminal__dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--tech-white);
+  opacity: 0.3;
+  margin-left: 5px;
+}
+
+/* --- BLOQUE CONTACT-FORM (BEM) --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form__label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--nasa-blue-light);
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  background: rgba(var(--tech-white-rbg), 0.05);
+  border: 1px solid rgba(var(--nasa-blue-dark-rbg), 0.3);
+  color: var(--nasa-blue-dark);
+  padding: 12px;
+  font-family: inherit;
+  font-weight: 500;
+  transition: var(--tr-standard);
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  background: rgba(var(--tech-white-rbg), 0.1);
+  border-color: var(--nasa-red-alert);
+  box-shadow: 0 0 8px rgba(var(--nasa-red-alert-rbg), 0.3);
+}
+
+/* BOTÓN DE ACCIÓN */
+.contact-form__submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid var(--nasa-red-alert);
+  color: var(--nasa-red-alert);
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: var(--tr-bounce);
+  text-transform: uppercase;
+}
+
+/* 2. Estados de Restricción (Deben ir primero) */
+.contact-form__submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(1);
+  /* Evita que el hover afecte al botón deshabilitado */
+  pointer-events: none;
+}
+
+/* 3. Estados de Interacción */
+.contact-form__submit-btn:hover {
+  background: var(--nasa-red-alert);
+  color: var(--tech-white);
+  box-shadow: 0 0 15px rgba(var(--nasa-red-alert-rbg), 0.5);
+}
+
+/* 4. Modificadores (BEM) */
+.contact-form__submit-btn--success {
+  border-color: var(--nasa-blue-light);
+  color: var(--nasa-blue-light);
+}

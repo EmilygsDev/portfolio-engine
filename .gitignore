@@ -42,3 +42,15 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Environments (Angular)
+src/environments/environment.ts
+src/environments/environment.prod.ts
+
+# Archivos locales de configuración
+.env
+.env.local
+.env.*.local
+
+# Configuración específica de IDE que podría guardar rutas locales
+.vscode/

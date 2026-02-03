@@ -1,0 +1,122 @@
+/* --- CONTENEDOR PRINCIPAL (BIO-CARD) --- */
+.bio-card {
+  background: var(--tech-white);
+  border-radius: 30px;
+  padding: clamp(20px, 5vw, 40px);
+  width: 100%;
+  max-width: 950px; /* Límite para escritorio */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row-reverse; /* Constelación a la derecha en PC */
+  flex-wrap: wrap; /* 👈 Vital: permite que en móvil los elementos bajen */
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(var(--tech-black-rbg), 0.05);
+  font-family: var(--font-code);
+  box-sizing: border-box; /* Evita que el padding ensanche la tarjeta */
+}
+
+/* --- BLOQUE DE TEXTO Y SKILLS --- */
+.bio-card__data {
+  flex: 1 1 320px; /* Ocupa al menos 320px antes de saltar de línea */
+  max-width: 500px;
+}
+
+.bio-card__title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--nasa-blue-dark);
+}
+
+.bio-card__subtitle {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.bio-card__text {
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+/* --- BLOQUE VISUAL (LA CONSTELACIÓN) --- */
+.bio-card__visual {
+  flex: 1 1 300px; /* El mapa estelar */
+  position: relative;
+  height: 380px;
+  min-width: 280px; /* Evita que el mapa se colapse en iPhone SE */
+  align-self: center;
+}
+
+/* --- ESTRELLAS INTERACTIVAS --- */
+.bio-card__star {
+  position: absolute;
+  background-color: var(--nasa-blue-dark);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background-color 0.2s, box-shadow 0.2s;
+  will-change: transform;
+}
+
+.bio-card__star--small { width: 4px; height: 4px; opacity: 0.7; }
+.bio-card__star--medium {
+  width: 8px; height: 8px;
+  box-shadow: 0 0 10px rgba(0, 122, 255, 0.3);
+}
+.bio-card__star--large {
+  width: 14px; height: 14px;
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
+  z-index: 10;
+}
+
+.bio-card__star:hover {
+  background-color: var(--nasa-red-alert);
+  transform: translate(-50%, -50%) scale(1.8);
+  box-shadow: 0 0 20px var(--nasa-red-alert);
+}
+
+/* --- BARRAS DE SKILLS (DISEÑO PRO) --- */
+.bio-card__skill-list { margin-top: 25px; }
+
+.bio-card__skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.bio-card__bar-track {
+  background: rgba(0, 0, 0, 0.05);
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.bio-card__bar-fill {
+  background: linear-gradient(90deg, var(--nasa-blue-dark), #007aff);
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* --- AJUSTES MÓVIL (IPHONE SE / CELULARES) --- */
+@media (max-width: 768px) {
+  .bio-card {
+    flex-direction: column-reverse; /* El texto arriba y la constelación abajo */
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .bio-card__visual {
+    height: 300px; /* Reducimos un poco el alto en móvil */
+    width: 100%;
+  }
+
+  .bio-card__title { font-size: 1.2rem; }
+}
+

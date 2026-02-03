@@ -1,0 +1,110 @@
+/* ==========================================================================
+   APP COMPONENT STYLES (Layout & Global Widgets)
+   ========================================================================== */
+
+/* --- BACKGROUND CANVAS --- */
+#tech-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  /* Usando variables del root para el gradiente */
+  background: radial-gradient(circle at center, var(--tech-grey-light) 0%, var(--tech-white) 100%);
+  pointer-events: none;
+}
+
+/* --- MAIN CONTENT CONTAINER --- */
+.spa-container {
+  margin-top: var(--nav-height);
+  width: 100%;
+}
+
+/* --- SECTION SHARED STYLES --- */
+.section {
+  padding: clamp(3rem, 8vh, 6rem) clamp(1rem, 5vw, 2rem);
+  width: 100%;
+}
+
+/* --- BACK TO TOP BUTTON (Unified & Optimized) --- */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background: rgba(var(--tech-grey-light-rbg), 0.8);
+  border: 2px solid var(--nasa-blue-dark);
+  color: var(--nasa-blue-dark);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+
+  /* Hidden state */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top:hover {
+  background: var(--nasa-blue-dark);
+  color: var(--tech-white);
+  box-shadow: 0 0 20px rgba(var(--nasa-blue-dark-rbg), 0.4);
+  transform: translateY(-5px);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- FOOTER SECTION --- */
+.footer {
+  width: 100%;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+  background: transparent;
+  font-family: var(--font-code);
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--nasa-blue-dark), transparent);
+  margin-bottom: 2rem;
+  opacity: 0.3;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--tech-grey-dim);
+  font-size: 0.85rem;
+}
+
+.footer__highlight {
+  color: var(--nasa-blue-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

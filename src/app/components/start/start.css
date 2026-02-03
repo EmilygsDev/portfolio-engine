@@ -1,0 +1,104 @@
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.hero__glass-card {
+  position: relative;
+  background: rgba(var(--tech-white-rbg), 0.03);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(var(--tech-white-rbg), 0.2);
+  border-radius: 30px;
+  padding: 4rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(var(--tech-black-rbg), 0.1),
+              inset 0 0 20px rgba(var(--nasa-blue-dark-rbg), 0.1);
+  transform: rotateX(5deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Animación de Levitación */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotateX(5deg); }
+  50% { transform: translateY(-20px) rotateX(2deg); }
+}
+
+/* Esquinas de la interfaz */
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--nasa-blue-dark);
+  border-style: solid;
+  opacity: 0.6;
+}
+
+.corner--tl { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+.corner--tr { top: -2px; right: -2px; border-width: 2px 2px 0 0; }
+.corner--bl { bottom: -2px; left: -2px; border-width: 0 0 2px 2px; }
+.corner--br { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+
+.hero__status-tag {
+  font-family: var(--font-code);
+  font-size: 0.7rem;
+  color: var(--nasa-blue-dark);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--tech-grey-dim);
+  margin: 0;
+  text-shadow: 0 0 20px rgba(52, 152, 219, 0.2);
+}
+
+.hero__subtitle {
+  color: var(--tech-black);
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.social-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-grid__item {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  /* El color inicial del icono es negro/gris oscuro */
+  color: var(--nasa-blue-dark);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Efecto de Hover: Activación del Rojo Carmine */
+.social-grid__item:hover {
+  color: var(--nasa-red-alert); /* Forzamos herencia al icono */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(191, 10, 48, 0.3);
+}
+
+/* El icono hereda el color del padre automáticamente */
+.social-grid__item i {
+  color: inherit;
+}
+

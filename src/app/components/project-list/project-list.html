@@ -1,0 +1,42 @@
+
+<div class="hud-wrapper">
+
+  <div class="sdlc-pipeline">
+    <div class="pipeline-line"></div>
+    <div class="nodes-container">
+      @for (phase of phases; track phase.id) {
+      <div class="phase-node"
+           [class.active]="activePhase === phase.id"
+           (click)="selectPhase(phase.id)">
+        <div class="black-dot"></div>
+        <span class="phase-label">{{ phase.name }}</span>
+      </div>
+      }
+    </div>
+  </div>
+
+  <div class="tech-console">
+    @for (tech of allTechnologies; track tech.id) {
+    <div class="icon-wrapper" [attr.data-tech]="tech.id" (click)="selectTech(tech)">
+      <img [src]="tech.icon" [title]="tech.name">
+    </div>
+    }
+  </div>
+
+  <div class="projects-grid">
+    @for (project of activeProjects; track project.id) {
+    <div class="project-card">
+      <h1>{{ project.title }}</h1>
+      <p>{{ project.desc }}</p>
+
+      <div class="badges-container">
+        @for (id of project.techIds; track id) {
+        <span class="badge" [attr.data-tech]="id">
+              {{ id }}
+            </span>
+        }
+      </div>
+    </div>
+    }
+  </div>
+</div>
