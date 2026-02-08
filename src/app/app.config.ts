@@ -19,7 +19,7 @@ export const appConfig: ApplicationConfig = {
       // lang: 'es',          // opcional: idioma inicial (si no → getBrowserLang)
 
       loader: provideTranslateHttpLoader({
-        prefix: '/i18n/',
+        prefix: './i18n/',
         suffix: '.json'
       }),
 
