@@ -29,7 +29,7 @@
                     class="nav__link"
                     [class.active]="activeSection === 'start'"
                     (click)="onLinkClick('start')">
-              {{ 'NAV.START' | translate }}
+              Start
             </button>
           </li>
 
@@ -38,7 +38,7 @@
                     class="nav__link"
                     [class.active]="activeSection === 'about'"
                     (click)="onLinkClick('about')">
-              {{ 'NAV.ABOUT' | translate }}
+              About me
             </button>
           </li>
 
@@ -47,7 +47,7 @@
                     class="nav__link"
                     [class.active]="activeSection === 'projects'"
                     (click)="onLinkClick('projects')">
-              {{ 'NAV.PROJECTS' | translate }}
+              Projects
             </button>
           </li>
 
@@ -56,7 +56,7 @@
                     class="nav__link"
                     [class.active]="activeSection === 'contact'"
                     (click)="onLinkClick('contact')">
-              {{ 'NAV.CONTACT' | translate }}
+              Contact
             </button>
           </li>
 
@@ -64,10 +64,10 @@
     </nav>
 
     <div class="header__controls">
-    <button class="lang-toggle" (click)="switchLanguage()" type="button">
-      <em class="fa-solid fa-globe"></em>
-      <span>{{ currentLangText }}</span>'
-    </button>
+<!--    <button class="lang-toggle" (click)="switchLanguage()" type="button">-->
+<!--      <em class="fa-solid fa-globe"></em>-->
+<!--      <span>{{ currentLangText }}</span>'-->
+<!--    </button>-->
 
     <button class="status-mode" (click)="toggleDark.emit()" type="button">
       <span class="theme-icon">

@@ -16,16 +16,16 @@ export const appConfig: ApplicationConfig = {
     provideTranslateService({
       // fallbackLang reemplaza a defaultLanguage + useDefaultLang
       fallbackLang: 'en',
-      // lang: 'es',          // opcional: idioma inicial (si no → getBrowserLang)
+      // lang: 'es',
 
       loader: provideTranslateHttpLoader({
-        prefix: '/i18n/',
+        prefix: './i18n/',
         suffix: '.json'
       }),
 
       // Opcional: si quieres cargar inmediatamente un idioma al inicio
       // defaultLang: 'es'  ← ya no se usa, mejor usa fallbackLang + translate.use() en APP_INITIALIZER si necesitas
-    }),
+      }),
 
         provideRouter(routes),
 
