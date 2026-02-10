@@ -1,0 +1,135 @@
+{
+  "configVersion": 1,
+  "timestamp": 1770587110162,
+  "index": "/portfolio-engine/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/portfolio-engine/favicon.ico",
+        "/portfolio-engine/index.html",
+        "/portfolio-engine/main-NS2G5TQN.js",
+        "/portfolio-engine/manifest.webmanifest",
+        "/portfolio-engine/styles-Z773QKZO.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/portfolio-engine/i18n/en.json",
+        "/portfolio-engine/i18n/es.json",
+        "/portfolio-engine/icons/angular.svg",
+        "/portfolio-engine/icons/apachekafka.svg",
+        "/portfolio-engine/icons/apachemaven.svg",
+        "/portfolio-engine/icons/azure-svgrepo-com.svg",
+        "/portfolio-engine/icons/cisco.svg",
+        "/portfolio-engine/icons/docker.svg",
+        "/portfolio-engine/icons/github.svg",
+        "/portfolio-engine/icons/googlechronicle.svg",
+        "/portfolio-engine/icons/googlecloudstorage.svg",
+        "/portfolio-engine/icons/icon-128x128.png",
+        "/portfolio-engine/icons/icon-144x144.png",
+        "/portfolio-engine/icons/icon-152x152.png",
+        "/portfolio-engine/icons/icon-192x192.png",
+        "/portfolio-engine/icons/icon-384x384.png",
+        "/portfolio-engine/icons/icon-512x512.png",
+        "/portfolio-engine/icons/icon-72x72.png",
+        "/portfolio-engine/icons/icon-96x96.png",
+        "/portfolio-engine/icons/java.svg",
+        "/portfolio-engine/icons/kubernetes.svg",
+        "/portfolio-engine/icons/langchain.svg",
+        "/portfolio-engine/icons/langflow.svg",
+        "/portfolio-engine/icons/langgraph.svg",
+        "/portfolio-engine/icons/mongodb.svg",
+        "/portfolio-engine/icons/mysql.svg",
+        "/portfolio-engine/icons/oracle.svg",
+        "/portfolio-engine/icons/postgresql.svg",
+        "/portfolio-engine/icons/python.svg",
+        "/portfolio-engine/icons/react.svg",
+        "/portfolio-engine/icons/rust.svg",
+        "/portfolio-engine/icons/selenium.svg",
+        "/portfolio-engine/icons/spring.svg",
+        "/portfolio-engine/icons/springboot.svg",
+        "/portfolio-engine/icons/springsecurity.svg",
+        "/portfolio-engine/icons/sqlite.svg",
+        "/portfolio-engine/icons/typescript.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/portfolio-engine/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/portfolio-engine/i18n/en.json": "391aaaf13411c84be1133fa6b35ddeea117c14f3",
+    "/portfolio-engine/i18n/es.json": "8e8556e9ebac81433719f81a85884524c573bc0b",
+    "/portfolio-engine/icons/angular.svg": "0f92759b6ebd7664966a3a461d3d324a8677fdcd",
+    "/portfolio-engine/icons/apachekafka.svg": "70bf47a8b4bc0473c6cd0c5759a2116158e699a5",
+    "/portfolio-engine/icons/apachemaven.svg": "f6ad2dceb620d4aa38b01cb52b27ac25e71450ad",
+    "/portfolio-engine/icons/azure-svgrepo-com.svg": "575f80cafca3310049f238c4db6798a2620fd7ce",
+    "/portfolio-engine/icons/cisco.svg": "adddfe0945fd7ef869ce77113bc5e84a67cafa6b",
+    "/portfolio-engine/icons/docker.svg": "9b03ea8bb62767a4f7c87b58a807fa5452d30a4f",
+    "/portfolio-engine/icons/github.svg": "f8c68ae2a4afa9659f4202a32fc0c42faa82d5da",
+    "/portfolio-engine/icons/googlechronicle.svg": "e550b5d509215c7116e662c7d7cda319233929de",
+    "/portfolio-engine/icons/googlecloudstorage.svg": "a3527f013fcc1f9bd4ba19e318f51ccc45ec2598",
+    "/portfolio-engine/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/portfolio-engine/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/portfolio-engine/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/portfolio-engine/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/portfolio-engine/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/portfolio-engine/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/portfolio-engine/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/portfolio-engine/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/portfolio-engine/icons/java.svg": "2104e3956be704b33cf3024d61a925a476c992df",
+    "/portfolio-engine/icons/kubernetes.svg": "6861f0b28108ee1aecf24e95fecb33a7e3c924cc",
+    "/portfolio-engine/icons/langchain.svg": "dbf80ecffe3a9c7c085e3dd5c5842ac405b79ed9",
+    "/portfolio-engine/icons/langflow.svg": "228b5546f6c0aafd4482eaf62ce9d72d62f80a9d",
+    "/portfolio-engine/icons/langgraph.svg": "894c21fcfd97c7418642926e245e5bd4ea47f43c",
+    "/portfolio-engine/icons/mongodb.svg": "8888cc2b3762d9ab8bf9751777f6ce204970da3b",
+    "/portfolio-engine/icons/mysql.svg": "c2a626c4981a38c90c6493cc05886fde072aa7b7",
+    "/portfolio-engine/icons/oracle.svg": "10f7a07251133836ba7380d993b85fb904c756e4",
+    "/portfolio-engine/icons/postgresql.svg": "8dc466b412332b8b8c7c136f905e50b48472ea0e",
+    "/portfolio-engine/icons/python.svg": "2534029baaadbe99c3c890edfeacfa0b72cf3b7e",
+    "/portfolio-engine/icons/react.svg": "ca17a29e5546fa3e88002ef8c1e4b4c8c3a0f4f2",
+    "/portfolio-engine/icons/rust.svg": "87d9a35966964fc2941990eb079e1e0471e3aff4",
+    "/portfolio-engine/icons/selenium.svg": "96afd3fc159d6bbc9a5df5eb55e93b89c9d8ffe6",
+    "/portfolio-engine/icons/spring.svg": "2a389e3e089ac73cff5a3b6adfcabd1c6966e0f4",
+    "/portfolio-engine/icons/springboot.svg": "1f3fc660c8f00e58efd5552fe6fd937ca0c0415a",
+    "/portfolio-engine/icons/springsecurity.svg": "d37159203fda62fac46d4556e4359657f4c51037",
+    "/portfolio-engine/icons/sqlite.svg": "3ceff2e37cb070acf24ad5a6be536dd6b827fa1e",
+    "/portfolio-engine/icons/typescript.svg": "11442c1b8c166ec5519192b237700ae41f05d289",
+    "/portfolio-engine/index.html": "041f1cd4dbe7fb02a189009e83dea9f16b08d27f",
+    "/portfolio-engine/main-NS2G5TQN.js": "45a12a0a5fcc5f577ca5c13b0a8a629444dbe012",
+    "/portfolio-engine/manifest.webmanifest": "0878fe56d2dee6483546535aedd76ad858cfd8c8",
+    "/portfolio-engine/styles-Z773QKZO.css": "b101c57abba37d8fef0f46127b32b70c89f5c217"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

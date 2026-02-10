@@ -1,0 +1,47 @@
+{
+  "NAV": {
+    "START": "Inicio",
+    "ABOUT": "Sobre mí",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto",
+    "FOOTER": " - Todos los derechos reservados"
+  },
+  "START": {
+    "STATUS": "SISTEMA LISTO: MODO RESOLUCIÓN DE PROBLEMAS ACTIVADO",
+    "TITLE": "Hola, soy Emily",
+    "SUBTITLE_1": "Desarrolladora de Software con formación en Ingeniería Electrónica - ",
+    "SUBTITLE_2": "Abordo problemas lógicos complejos, comportamiento de sistemas y construcción de software confiable."
+  },
+  "ABOUT": {
+    "TITLE": "MI HISTORIA",
+    "SUBTITLE": "PERFIL DE INGENIERO",
+    "INITIAL_DESC": "ADN DE LA MENTE: SABE CÓMO USAR LAS LEYES FÍSICAS DEL ELECTRÓN Y SUS SISTEMAS ASOCIADOS",
+    "RECORDS": {
+      "ORIGIN": "ORIGEN",
+      "DISCIPLINE": "DISCIPLINA",
+      "CLEARANCE": "ESTADO"
+    }
+  },
+  "PROJECTS": {
+    "PHASES": {
+      "OVERVIEW": "Resumen",
+      "PLANNING": "Planeación",
+      "DESIGN": "Diseño",
+      "IMPLEMENTATION": "Implementación",
+      "DEPLOYMENT": "Despliegue",
+      "TESTING": "Pruebas",
+      "MAINTENANCE": "Mantenimiento"
+    }
+  },
+  "CONTACT": {
+    "STATUS": "COMUNICACIÓN_ESTABLECIDA",
+    "SUBJECT": "Asunto:",
+    "SUBJECT_PH": "Asunto de la misión...",
+    "EMAIL": "Correo:",
+    "EMAIL_PH": "correo@ejemplo.com",
+    "MESSAGE": "Escribe tu pregunta aquí:",
+    "MESSAGE_PH": "Mensaje de transmisión...",
+    "SEND": "TRANSMITIR",
+    "SUCCESS": "TRANSMISIÓN EXITOSA"
+  }
+}

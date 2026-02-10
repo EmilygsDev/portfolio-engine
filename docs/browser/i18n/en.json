@@ -1,0 +1,47 @@
+{
+  "NAV": {
+    "START": "Start",
+    "ABOUT": "About me",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "FOOTER": " - All rights reserved"
+  },
+  "START": {
+    "STATUS": "SYSTEM READY: PROBLEM-SOLVING MODE ENABLED",
+    "TITLE": "Hi, I'm Emily",
+    "SUBTITLE_1": "Software Developer with an Electronics Engineering background - ",
+    "SUBTITLE_2": "I tackle logic-heavy problems, system behavior, and building reliable software."
+  },
+  "ABOUT": {
+    "TITLE": "MY STORY",
+    "SUBTITLE": "ENGINEER PROFILE",
+    "INITIAL_DESC": "DNA OF THE MIND: KNOWS HOW TO USE THE PHYSICAL LAWS OF THE ELECTRON AND ITS ASSOCIATED SYSTEMS",
+    "RECORDS": {
+      "ORIGIN": "ORIGIN",
+      "DISCIPLINE": "DISCIPLINE",
+      "CLEARANCE": "STATUS"
+    }
+  },
+  "PROJECTS": {
+    "PHASES": {
+      "OVERVIEW": "Overview",
+      "PLANNING": "Planning",
+      "DESIGN": "Design",
+      "IMPLEMENTATION": "Implementation",
+      "DEPLOYMENT": "Deployment",
+      "TESTING": "Testing",
+      "MAINTENANCE": "Maintenance"
+    }
+  },
+  "CONTACT": {
+    "STATUS": "COMMS_ESTABLISHED",
+    "SUBJECT": "Subject:",
+    "SUBJECT_PH": "Mission subject...",
+    "EMAIL": "Email:",
+    "EMAIL_PH": "email@example.com",
+    "MESSAGE": "Write your question here:",
+    "MESSAGE_PH": "Transmission message...",
+    "SEND": "TRANSMIT",
+    "SUCCESS": "SUCCESSFUL TRANSMISSION"
+  }
+}
