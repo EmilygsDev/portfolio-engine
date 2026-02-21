@@ -1,0 +1,27 @@
+
+name: Deploy Portfolio
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm install
+      - name: Create Env
+        run: |
+          mkdir -p src/environments
+          echo "export const environment = { production: true, emailjs: {
+            serviceID: '${{ secrets.EMAIL_SERVICE_ID }}',
+            templateID: '${{ secrets.EMAILJS_TEMPLATE_ID }}',
+            publicKey: '${{ secrets.EMAILJS_PUBLIC_KEY }}' } };" > src/environments/environment.ts
+      - run: npm run build -- --base-href /portfolio-engine/
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist/portfolio-engine
+          branch: gh-pages
